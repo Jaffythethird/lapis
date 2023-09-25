@@ -1,2 +1,6 @@
 # lapis
-The "Local API for Streamers" (LAPIS) is a helper for streamers to add more functionality to their commands and redeems
+The "Local API for Streamers" (LAPIS) is a helper for streamers to add more functionality to their commands and redeems.
+
+The general idea is to have a function to interact with the streaming provider's API (Twitch, YT, etc.) and abstract these into a generic interface. Eventually, streaming on multiple platforms should be supported. Privacy is a big factor here, so streamers can add custom code and widgets to their stream without having to trust a third party with whatever permissions they may demand. The important thing is that this is an abstraction getting info from the services as well as getting info to them. This overcomes some of the bigger hurdles of making complicated commands with things like if statements.
+
+I imagine adding in ways for the more popular programming languages to easily interface with this, like being able to create an object or something from a library. Eventually we can have premade widgets like spinners and such. Streamers should be able to import these to their OBS. This should be able to read chat, notice point redeems, discern between moderators, VIP, owner, and and viewers that the streamer adds to a local permissions list. Perhaps a gui for visualizing all connected widgets and streams, and eventually a drag-and-drop command builder for those that are... less technically inclined.
